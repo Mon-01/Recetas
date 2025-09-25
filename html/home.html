@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,10 +11,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">CocinaMolones</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -26,40 +23,29 @@
           <a class="nav-link" href="#">Ingredientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categorias</a>
+          <a class="nav-link" href="Categories.html">Categorias</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Región</a>
         </li>
-        
-        <!-- 
-        Esto es un menu desplegable dentro del menu.
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> -->
-
-
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
     </div>
   </div>
 </nav>
 </header>
 <main>
-    <p class="text-center fw-bold">Bienvenidos a CocinaMolones, en esta página podrás consultar información sobre tus recetas favoritas.</p>
-    <p class="text-center fs-2">Receta de ejemplo:</p>
-<div class="card mx-auto p-2" style="width: 18rem;">
+<div class="container text-center">
+  <div class="row align-items-center">
+    <div class="col-3 ">
+      <p class="text-center fw-bold">Bienvenidos a CocinaMolones, en esta página podrás consultar información sobre tus recetas favoritas.</p>
+    </div>
+    <div class="col-6">
+      <p class="text-center fs-2">Receta de ejemplo:</p>
+<div class="card mx-auto">
   <img src="./gofio.jpg" class="card-img-top" alt="gofio">
   <div class="card-body">
     <h5 class="card-title">Gofio escaldado</h5>
@@ -68,34 +54,25 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Vegano</li>
     <li class="list-group-item">Canarias</li>
-    <li class="list-group-item">Gofio</li>
-    <li class="list-group-item">"Instrucciones"</li>
     <li class="list-group-item"><button type="button" class="btn btn-outline-danger">#gofio</button></li>
-
-
   </ul>
-  <div class="card-body">
+  <!-- <div class="card-body">
     <a href="#" class="card-link">Video de preparación</a>
-  </div>
-
+  </div> -->
 </div>
-<div class="card mx-auto p-2" style="width: 18rem;">
+    </div>
+    <div class="col-2">
+      <div class="card mx-auto" style="width: 10rem;">
     <button type="button" class="btn btn-secondary">Receta aleatoria</button>
+</div>
+    </div>
+  </div>
 </div>
 
 </main>
 
  <footer>
-    <!-- <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav> -->
-  </footer>
+</footer>
   </body>
  
 </html>
