@@ -11,8 +11,10 @@ async function generarCategorias() {
 
         for (let i = 0; i < categorias.length; i++) {
             let carta = document.createElement("div");
-            carta.className = "col";  
+            carta.className = "col";
+            carta.className = "card";
             carta.innerHTML = categorias[i].strCategory; 
+            clicable(carta);
             document.getElementById("categorias").appendChild(carta);
         }
     } catch (error) {
@@ -21,3 +23,12 @@ async function generarCategorias() {
 }
 
 generarCategorias();
+
+function clicable(carta){
+    carta.addEventListener("click",() => {
+        
+        let categoria = carta.innerHTML;
+        window.location.href = `recipe.html?categoria=${categoria}`;
+    }
+    );
+}
